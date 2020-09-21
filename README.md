@@ -3,8 +3,9 @@
 # Overview/Welcome
 
 # Directory structure 
-.
-├── data
+
+.    
+├── data    
 │   ├── 01_raw
 │   ├── 02_interim
 │   └── 03_processed

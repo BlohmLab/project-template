@@ -3,7 +3,7 @@
 # Overview/Welcome
 
 # Directory structure 
-
+```
 .    
 ├── data    
 │   ├── 01_raw    
@@ -24,6 +24,7 @@
 │   └── figures     
 ├── requirements.txt     
 └── setup.py     
+```
 
 ## Data
 

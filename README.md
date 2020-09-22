@@ -6,7 +6,7 @@ In general, it is part of our lab's ongoing effort to publish clean, consistent,
 More specifically, this repository serves three purposes:
 
 1. It provides a starting point for lab members who may be new to organizing a Python data science project.
-2. It provides examples of common data science tools in use that may be useful to lab members who are already comfortable with Python data science.
+2. It provides examples of common data science tools and conventions that may be useful to lab members who are already comfortable with Python data science.
 3. It provides a Bash script for generating a standard repository skeleton to help start new Python projects quickly.
 
 The repository structure and workflow provided is **not intended to be presecriptive.**

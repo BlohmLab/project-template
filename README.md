@@ -12,7 +12,7 @@ More specifically, this repository serves three purposes:
 The repository structure and workflow provided is **not intended to be presecriptive.**
 There are obvious benefits to having a common repository structure, but [a foolish consistency is the hobgoblin of little minds](https://www.goodreads.com/quotes/353571-a-foolish-consistency-is-the-hobgoblin-of-little-minds-adored).
 Every person has their preferred workflow, and every project has different needs.
-Feel free to ignore/update/rename any component of this template as needed.
+Feel free to ignore/update/rename any component of this template to suit your needs, and if you find a great tool/alternative workflow, let us know!
 
 # Directory structure 
 ```

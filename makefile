@@ -12,8 +12,8 @@ notebooks:
 
 data:
 	@python data_script_1.py
-    @echo "Step 1 complete."
+	@echo "Step 1 complete."
 	@python data_script_2.py
-    @echo "Step 2 complete."
+	@echo "Step 2 complete."
 	@python data_script_3.py
-    @echo "Step 3 complete."y
+	@echo "Step 3 complete."

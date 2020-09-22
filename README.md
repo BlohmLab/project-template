@@ -97,11 +97,11 @@ For example, if you have a series of data processing scripts that must always be
 ```
 data:
 	@python data_script_1.py
-    @echo "Step 1 complete."
+	@echo "Step 1 complete."
 	@python data_script_2.py
-    @echo "Step 2 complete."
+	@echo "Step 2 complete."
 	@python data_script_3.py
-    @echo "Step 3 complete."
+	@echo "Step 3 complete.""
 ```
 
 The above examples should be enough to get you started using make to automate things.

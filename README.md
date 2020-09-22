@@ -1,6 +1,18 @@
 # project-template
 
-# Overview/Welcome
+# Goals for this repository
+This repository exists for a few reasons. 
+In general, it is part of our lab's ongoing effort to publish clean, consistent, and reproducible code in the pursuit of [Open Science](https://www.cos.io/).
+More specifically, this repository serves three purposes:
+
+1. It provides a starting point for lab members who may be new to organizing a Python data science project.
+2. It provides examples of common data science tools in use that may be useful to lab members who are already comfortable with Python data science.
+3. It provides a Bash script for generating a standard repository skeleton to help start new Python projects quickly.
+
+The repository structure and workflow provided is **not intended to be presecriptive.**
+There are obvious benefits to having a common repository structure, but [a foolish consistency is the hobgoblin of little minds](https://www.goodreads.com/quotes/353571-a-foolish-consistency-is-the-hobgoblin-of-little-minds-adored).
+Every person has their preferred workflow, and every project has different needs.
+Feel free to ignore/update/rename any component of this template as needed.
 
 # Directory structure 
 ```
@@ -9,19 +21,19 @@
 │   ├── 01_raw    
 │   ├── 02_interim    
 │   └── 03_processed    
-├── makefile    
 ├── models    
+├── notebooks     
+│   └── jupytext     
+├── reports     
+│   └── figures     
 ├── my_project    
 │   ├── __init__.py     
 │   ├── data    
 │   ├── models    
 │   ├── utils    
 │   └── visualization       
-├── notebooks     
-│   └── jupytext     
 ├── README.md     
-├── reports     
-│   └── figures     
+├── makefile    
 ├── requirements.txt     
 └── setup.py     
 ```
@@ -44,7 +56,7 @@ This is not a python or shell script, but a unique text file that contains instr
 Makefiles are commonly used when writing C programs to help with code compilation.
 This utility is installed by default on Linux systems, but can be installed with one command on macOS via [homebrew](https://formulae.brew.sh/formula/make) (`brew install make`) or Windows via [chocolatey](https://chocolatey.org/packages/make) (`choco install make`).
 
-Python is an [interpreted](https://en.wikipedia.org/wiki/Interpreted_language) language that doesn't need to be compiled before running, so why would we use this C compilation utility for a Python data science project?
+Python is an [interpreted](https://en.wikipedia.org/wiki/Interpreted_language) language that doesn't need to be compiled before running, so why would we use a C compilation utility for a Python data science project?
 [This blog post](https://krzysztofzuraw.com/blog/2016/makefiles-in-python-projects) provides some motivation, but the short answer is "because it can make your life easier."
 
 The quickest way to understand how a Makefile works is to `cd` into the top directory of the repository (where `makefile` lives) and type:
@@ -101,7 +113,7 @@ data:
 	@python data_script_2.py
 	@echo "Step 2 complete."
 	@python data_script_3.py
-	@echo "Step 3 complete.""
+	@echo "Step 3 complete."
 ```
 
 The above examples should be enough to get you started using make to automate things.

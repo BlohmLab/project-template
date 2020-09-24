@@ -54,7 +54,7 @@ Feel free to ignore/update/rename any component of this template to suit your ne
 ## Using Git
 When managing a project, it is important to use some form of version control. This allows you to track your changes, keep a backup of your work, and allows you to effectively collaborate with others. There are many version control solutions, but GitHub uses Git.
 
-Watch the following tutorial for an introduction to git.
+Watch the following tutorial for an introduction to git.   
 [![](http://img.youtube.com/vi/HVsySz-h9r4/0.jpg)](http://www.youtube.com/watch?v=HVsySz-h9r4 "")
 
 ### Cloning a repository

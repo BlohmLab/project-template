@@ -20,24 +20,24 @@ The directory structure is adapted from [Cookiecutter Data Science](https://driv
 .    
 ├── data    
 │   ├── 01_raw   	    <--- all raw data goes here (and is NEVER edited directly) 
-│   ├── 02_interim      <--- partly-processed/temporary data
-│   └── 03_processed    <--- fully cleaned/processed data
-├── models    			<--- trained model fits
-├── notebooks     		<--- all scratch notebooks
-│   └── jupytext        <--- used by jupytext, can be ignored by humans
-├── reports     		<--- markdown manuscripts/abstracts/etc 
-│   └── figures     	<--- finished figures (image files) used by reports
-├── my_project    		<--- the meat and potatoes (all code modules)
-│   ├── __init__.py     <--- tells python that this is a module
-│   ├── data    		<--- code related to data processing/saving/loading
-│   ├── models    		<--- model code
-│   ├── utils    		<--- general-purpose code used around this repo
-│   └── visualization  	<--- plotting code
-├── .gitignore  		<--- tells git what not to track
-├── README.md     		<--- this file!
-├── makefile    		<--- useful general-purpose commands
-├── requirements.txt    <--- lists the python packages used by this repo
-└── setup.py     		<--- used to install modules from my_project/
+│   ├── 02_interim          <--- partly-processed/temporary data
+│   └── 03_processed        <--- fully cleaned/processed data
+├── models    		    <--- trained model fits
+├── notebooks     	    <--- all scratch notebooks
+│   └── jupytext            <--- used by jupytext, can be ignored by humans
+├── reports     	    <--- markdown manuscripts/abstracts/etc 
+│   └── figures     	    <--- finished figures (image files) used by reports
+├── my_project    	    <--- the meat and potatoes (all code modules)
+│   ├── __init__.py         <--- tells python that this is a module
+│   ├── data    	    <--- code related to data processing/saving/loading
+│   ├── models              <--- model code
+│   ├── utils    	    <--- general-purpose code used around this repo
+│   └── visualization  	    <--- plotting code
+├── .gitignore  	    <--- tells git what not to track
+├── README.md     	    <--- this file!
+├── makefile    	    <--- useful general-purpose commands
+├── requirements.txt        <--- lists the python packages used by this repo
+└── setup.py     	    <--- used to install modules from my_project/
 ```
 
 ## Data

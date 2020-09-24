@@ -31,7 +31,8 @@ Feel free to ignore/update/rename any component of this template to suit your ne
 │   ├── data    
 │   ├── models    
 │   ├── utils    
-│   └── visualization       
+│   └── visualization  
+├── .gitignore  
 ├── README.md     
 ├── makefile    
 ├── requirements.txt     
@@ -49,6 +50,8 @@ Feel free to ignore/update/rename any component of this template to suit your ne
 ## Models
 
 ## Setup.py and requirements
+
+## Using Git
 
 ## Makefile 
 The top-level directory of this project contains a file called `makefile`.

@@ -86,6 +86,7 @@ The benefit of using `ssh` is that you can setup a key that will allow your comp
 #### Pull requests
 
 ### .Gitignore
+Git will track changes to all files added to the repository folder. This includes temporary files, or those created by software as a backup. You want to avoid adding unnecessary or irrelevant files to your repository. Fortunately Git provides a way to ignore certain types of files. A `.gitignore` file contains filenames and extensions that should not be tracked. For example, MacOS has an invisible `.DS_STORE` file in each directory that Git would include by default which is not a desired behaviour. You can prevent Git from tracking it by adding `.DS_STORE` on its own line in the `.gitignore` file. Any line that begins with a `#` will be interpreted as a comment. When using Jupyter Notebooks checkpoints are stored in a `.ipynb_checkpoints/` directory. We can tell git to ignore this directory by adding it to the `.gitignore` file.
 
 ## Makefile 
 The top-level directory of this project contains a file called `makefile`.

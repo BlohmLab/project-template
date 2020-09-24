@@ -1,4 +1,4 @@
-.PHONY = all hello notebooks data 
+.PHONY: all hello notebooks data 
 
 all: 
 	@echo "This is the first recipe in the makefile."

@@ -31,7 +31,8 @@ Feel free to ignore/update/rename any component of this template to suit your ne
 │   ├── data    
 │   ├── models    
 │   ├── utils    
-│   └── visualization       
+│   └── visualization  
+├── .gitignore  
 ├── README.md     
 ├── makefile    
 ├── requirements.txt     
@@ -49,6 +50,43 @@ Feel free to ignore/update/rename any component of this template to suit your ne
 ## Models
 
 ## Setup.py and requirements
+
+## Using Git
+When managing a project, it is important to use some form of version control. This allows you to track your changes, keep a backup of your work, and allows you to effectively collaborate with others. There are many version control solutions, but GitHub uses Git.
+
+Watch the following tutorial for an introduction to git.   
+[![](http://img.youtube.com/vi/HVsySz-h9r4/0.jpg)](http://www.youtube.com/watch?v=HVsySz-h9r4 "")
+
+### Cloning a repository
+When you want to download your own copy of the project, you have to clone the repository. There are several options when pressing the **"&downarrow; Code"** button:
+
+* You can download a zip archive
+* You can clone the repository with a Git command via `https`
+* You can clone the repository with a Git command via `ssh`
+
+Downloading a zip file is the simplest since you only require a web browser. However, to make the best use of Git you should have it installed on your workstation. Once you have git installed, using a terminal `cd` into your preferred directory and type the following command to clone this project:
+```
+$ git clone https://github.com/BlohmLab/project-template.git
+```
+You will be prompted to enter your username and password for private repositories.
+```
+Username for 'https://github.com':
+Password for 'https://github.com':
+```
+When using https you will need to enter your username and password each time you want to make a change or update your copy of the project.
+
+The benefit of using `ssh` is that you can setup a key that will allow your computer to be authenticated automatically.
+
+#### Setting up SSH 
+
+### The Git workflow
+
+#### Branches
+#### Commits
+#### Pull requests
+
+### .Gitignore
+Git will track changes to all files added to the repository folder. This includes temporary files, or those created by software as a backup. You want to avoid adding unnecessary or irrelevant files to your repository. Fortunately Git provides a way to ignore certain types of files. A `.gitignore` file contains filenames and extensions that should not be tracked. For example, MacOS has an invisible `.DS_STORE` file in each directory that Git would include by default which is not a desired behaviour. You can prevent Git from tracking it by adding `.DS_STORE` on its own line in the `.gitignore` file. Any line that begins with a `#` will be interpreted as a comment. When using Jupyter Notebooks checkpoints are stored in a `.ipynb_checkpoints/` directory. We can tell git to ignore this directory by adding it to the `.gitignore` file.
 
 ## Makefile 
 The top-level directory of this project contains a file called `makefile`.

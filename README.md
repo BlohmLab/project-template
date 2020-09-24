@@ -19,25 +19,25 @@ The directory structure is adapted from [Cookiecutter Data Science](https://driv
 ```
 .    
 ├── data    
-│   ├── 01_raw    
-│   ├── 02_interim    
-│   └── 03_processed    
-├── models    
-├── notebooks     
-│   └── jupytext     
-├── reports     
-│   └── figures     
-├── my_project    
-│   ├── __init__.py     
-│   ├── data    
-│   ├── models    
-│   ├── utils    
-│   └── visualization  
-├── .gitignore  
-├── README.md     
-├── makefile    
-├── requirements.txt     
-└── setup.py     
+│   ├── 01_raw   	    <--- all raw data goes here (and is NEVER edited directly) 
+│   ├── 02_interim      <--- partly-processed/temporary data
+│   └── 03_processed    <--- fully cleaned/processed data
+├── models    			<--- trained model fits
+├── notebooks     		<--- all scratch notebooks
+│   └── jupytext        <--- used by jupytext, can be ignored by humans
+├── reports     		<--- markdown manuscripts/abstracts/etc 
+│   └── figures     	<--- finished figures (image files) used by reports
+├── my_project    		<--- the meat and potatoes (all code modules)
+│   ├── __init__.py     <--- tells python that this is a module
+│   ├── data    		<--- code related to data processing/saving/loading
+│   ├── models    		<--- model code
+│   ├── utils    		<--- general-purpose code used around this repo
+│   └── visualization  	<--- plotting code
+├── .gitignore  		<--- tells git what not to track
+├── README.md     		<--- this file!
+├── makefile    		<--- useful general-purpose commands
+├── requirements.txt    <--- lists the python packages used by this repo
+└── setup.py     		<--- used to install modules from my_project/
 ```
 
 ## Data
@@ -108,7 +108,7 @@ There are many ways to set Jupytext up (see their [documentation](https://jupyte
 
 - The `notebooks/` directory contains a sub-directory `notebooks/jupytext/` that will contain the jupytext versions of all notebooks.
 You never have to touch this directory (or the jupytext scripts inside).
-- All files ending with `*.ipynb` are ignored by git (see [.gitignore](##.gitignore)) so that no notebook files are tracked.
+- All files ending with `*.ipynb` are ignored by git (see [.gitignore](#gitignore)) so that no notebook files are tracked.
 All `*.py` files in `notebooks/jupytext/` are tracked by git.
 - To "link" all jupyter notebooks in `notebooks` to their Jupytext copies, use the command `$ jupytext --set-formats ipynb,jupytext//py --sync notebooks/*.ipynb`.
 Now when you edit and save your local jupyter notebook via a jupyter notebook server in the browser, jupytext will automagically sync the changes to the linked python script.
